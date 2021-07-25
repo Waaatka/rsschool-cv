@@ -11,6 +11,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+code {
+  white-space: pre;
+}
+code mark {
+  background: none;
+  color: blueviolet ;
+}
 h2 {
   margin-top: 0;
 }
@@ -30,6 +37,7 @@ main section:nth-child(2n) {
 .head-menu {
   display: flex;
   justify-content: center;
+  font-size: 12px;
 }
 .head-menu ul {
   display: flex;

@@ -80,16 +80,17 @@
   <section class="code-examples" id="code">
     <article class="container">
       <h2>Code examples</h2>
-      <code>function incrementString (strng) {
-        let i = 0
-        while (typeof strng[i] !== 'undefined' && Number.isNaN(parseInt(strng[i], 10))){
-        i++
-        }
-        const numbers = strng.slice(i,strng.length)
-        const paddedNumbers = `${parseInt(numbers || '0', 10) + 1}`
-        .padStart(numbers.length,'0')
-        return `${strng.slice(0,i)}${paddedNumbers}`
-        }
+      <code>
+<mark>function</mark> incrementString (strng) {
+  <mark>let</mark> i = 0
+  <mark>while</mark> (<mark>typeof</mark> strng[i] !== 'undefined' && Number.isNaN(parseInt(strng[i], 10))){
+    i++
+  }
+  <mark>const</mark> numbers = strng.slice(i,strng.length)
+  <mark>const</mark> paddedNumbers = `${parseInt(numbers || '0', 10) + 1}`
+    .padStart(numbers.length,'0')
+  <mark>return</mark> `${strng.slice(0,i)}${paddedNumbers}`
+}
       </code>
     </article>
   </section>
