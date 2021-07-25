@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anna Sapegina CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+  <nav class="head-menu container">
+    <ul>
+      <li>
+        <a href="#photo">Name and contacts</a>
+      </li>
+      <li>
+        <a href="#about">About me</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#code">Code Examples</a>
+      </li>
+      <li>
+        <a href="#education">Education and experience</a>
+      </li>
+      <li>
+        <a href="#lang">Languages</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="photo" id="photo">
+    <div class="container">
+      <img src="./images/photo.png" alt="Photo" height="400">
+      <div class="name">
+        <h4>My name is</h4>
+        <p>Anna Sapegina</p>
+        <ul>
+          <li>E-mail: <a href="mailto:watochka@gmail.com">watochka@gmail.com</a></li>
+          <li>Phone: <a href="tel:79990872551">+7-999-087-25-51</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About me</h2>
+      <p>
+        I am a beginner female software engineer.
+        I wish to became a professional front-end developer and build
+        beautiful and convenient user interfaces.
+        I was working as a school teacher, but I decided to start
+        an IT career.
+        I was teaching my students a Russian language,
+        so I am pretty familiar with languages and
+        I believe it will help me become a professional in another
+        language: JavaScript! I really like to learn new stuff and
+        I would like to share my knowledge to further generations of
+        software developers.
+      </p>
+
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git</li>
+        <li>Basics of JavaScripts</li>
+      </ul>
+    </div>
+  </section>
+  <section class="code-examples" id="code">
+    <div class="container">
+      <h2>Code examples</h2>
+      <code>
+<span>function</span> incrementString (strng) {
+  <span>let</span> i = 0
+  <span>while</span> (<span>typeof</span> strng[i] !== 'undefined' && Number.isNaN(parseInt(strng[i], 10))){
+    i++
+  }
+  <span>const</span> numbers = strng.slice(i,strng.length)
+  <span>const</span> paddedNumbers = `${parseInt(numbers || '0', 10) + 1}`
+    .padStart(numbers.length,'0')
+  <span>return</span> `${strng.slice(0,i)}${paddedNumbers}`
+}
+      </code>
+    </div>
+  </section>
+  <section class="education" id="education">
+    <div class="container">
+      <h2>Education and experience</h2>
+      <ul>
+        <li>Bachelor degree in Pedagogical Institute Pacific National University</li>
+        <li>GeekBrains HTML & CSS workshop</li>
+        <li>Yandex practicum basic HTML course</li>
+      </ul>
+    </div>
+  </section>
+  <section class="lang" id="lang">
+    <div class="container">
+      <h2>Languages</h2>
+      <ul>
+        <li>Russian: native</li>
+        <li>English: A2</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="git-info">
+      <a href="https://github.com/Waaatka">Github: Waaatka</a>
+    </div>
+    <div class="year">2021</div>
+    <div class="rs-school">
+      <a href="https://rs.school/js/">
+        <img src="./images/rs_school_js.svg" alt="RS School" height="32">
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
