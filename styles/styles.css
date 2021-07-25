@@ -14,7 +14,7 @@ a:hover {
 code {
   white-space: pre;
 }
-code mark {
+code span {
   background: none;
   color: blueviolet ;
 }
@@ -28,7 +28,15 @@ main section{
 main section:nth-child(2n) {
   background: none;
 }
+main article ul li {
+  list-style-type: circle;
+}
 
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+}
 .container {
   width: 800px;
   margin: 0 auto;
@@ -68,5 +76,18 @@ main section:nth-child(2n) {
 }
 .name ul li {
   display: block;
+}
+footer {
+  background: #e7e7e7;
+  padding: 24px 0;
+}
+footer article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rs-school {
+  display: flex;
+  flex-direction: column;
 }
 

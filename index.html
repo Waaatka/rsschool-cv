@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<header class="container">
-  <nav class="head-menu">
+<header>
+  <nav class="head-menu container">
     <ul>
       <li>
         <a href="#photo">Name and contacts</a>
@@ -36,7 +36,7 @@
 <main>
   <section class="photo" id="photo">
     <article class="container">
-      <img src="./images/photo.png" alt="" height="400">
+      <img src="./images/photo.png" alt="Photo" height="400">
       <div class="name">
         <h4>My name is</h4>
         <p>Anna Sapegina</p>
@@ -81,15 +81,15 @@
     <article class="container">
       <h2>Code examples</h2>
       <code>
-<mark>function</mark> incrementString (strng) {
-  <mark>let</mark> i = 0
-  <mark>while</mark> (<mark>typeof</mark> strng[i] !== 'undefined' && Number.isNaN(parseInt(strng[i], 10))){
+<span>function</span> incrementString (strng) {
+  <span>let</span> i = 0
+  <span>while</span> (<span>typeof</span> strng[i] !== 'undefined' && Number.isNaN(parseInt(strng[i], 10))){
     i++
   }
-  <mark>const</mark> numbers = strng.slice(i,strng.length)
-  <mark>const</mark> paddedNumbers = `${parseInt(numbers || '0', 10) + 1}`
+  <span>const</span> numbers = strng.slice(i,strng.length)
+  <span>const</span> paddedNumbers = `${parseInt(numbers || '0', 10) + 1}`
     .padStart(numbers.length,'0')
-  <mark>return</mark> `${strng.slice(0,i)}${paddedNumbers}`
+  <span>return</span> `${strng.slice(0,i)}${paddedNumbers}`
 }
       </code>
     </article>
@@ -114,5 +114,18 @@
     </article>
   </section>
 </main>
+<footer>
+  <article class="container">
+    <div class="git-info">
+      <a href="https://github.com/Waaatka">Github: Waaatka</a>
+    </div>
+    <div class="year">2021</div>
+    <div class="rs-school">
+      <a href="https://rs.school/js/">
+        <img src="./images/rs_school_js.svg" alt="RS School" height="32">
+      </a>
+    </div>
+  </article>
+</footer>
 </body>
 </html>
