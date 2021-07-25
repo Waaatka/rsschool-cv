@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -15,20 +16,20 @@ code {
   white-space: pre;
 }
 code span {
+  color: blueviolet;
   background: none;
-  color: blueviolet ;
 }
 h2 {
   margin-top: 0;
 }
-main section{
-  background: #e7e7e7;
+main section {
   padding: 32px 0;
+  background: #e7e7e7;
 }
 main section:nth-child(2n) {
   background: none;
 }
-main article ul li {
+main ul li {
   list-style-type: circle;
 }
 
@@ -56,10 +57,10 @@ header {
 }
 .photo {
   height: 400px;
-  background: #868686;
   padding: 0;
+  background: #868686;
 }
-.photo article {
+.photo .container {
   display: flex;
   align-items: center;
 }
@@ -68,8 +69,8 @@ header {
   color: white;
 }
 .name p {
-  font-size: 50px;
   margin: 0;
+  font-size: 50px;
 }
 .name ul {
   padding: 0;
@@ -78,10 +79,10 @@ header {
   display: block;
 }
 footer {
-  background: #e7e7e7;
   padding: 24px 0;
+  background: #e7e7e7;
 }
-footer article {
+footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
