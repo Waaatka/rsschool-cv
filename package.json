@@ -1,0 +1,36 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "My CV: https://waaatka.github.io/rsschool-cv/cv",
+  "scripts": {
+    "build": "parcel build --public-url . index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Waaatka/rsschool-cv.git"
+  },
+  "author": "Watka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Waaatka/rsschool-cv/issues"
+  },
+  "homepage": "https://github.com/Waaatka/rsschool-cv#readme",
+  "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
+    "@parcel/transformer-less": "2.0.0-rc.0",
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.41.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "circular-progress-bar": "^2.1.0",
+    "highlight.js": "^11.2.0",
+    "normalize-scss": "^7.0.1",
+    "typed.js": "^2.0.12"
+  }
+}
