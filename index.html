@@ -1,131 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Anna Sapegina CV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-<header>
-  <nav class="head-menu container">
-    <ul>
-      <li>
-        <a href="#photo">Name and contacts</a>
-      </li>
-      <li>
-        <a href="#about">About me</a>
-      </li>
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
-      <li>
-        <a href="#code">Code Examples</a>
-      </li>
-      <li>
-        <a href="#education">Education and experience</a>
-      </li>
-      <li>
-        <a href="#lang">Languages</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <section class="photo" id="photo">
-    <div class="container">
-      <img src="./images/photo.png" alt="Photo" height="400">
-      <div class="name">
-        <h4>My name is</h4>
-        <p>Anna Sapegina</p>
-        <ul>
-          <li>E-mail: <a href="mailto:watochka@gmail.com">watochka@gmail.com</a></li>
-          <li>Phone: <a href="tel:79990872551">+7-999-087-25-51</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="about" id="about">
-    <div class="container">
-      <h2>About me</h2>
-      <p>
-        I am a beginner female software engineer.
-        I wish to became a professional front-end developer and build
-        beautiful and convenient user interfaces.
-        I was working as a school teacher, but I decided to start
-        an IT career.
-        I was teaching my students a Russian language,
-        so I am pretty familiar with languages and
-        I believe it will help me become a professional in another
-        language: JavaScript! I really like to learn new stuff and
-        I would like to share my knowledge to further generations of
-        software developers.
-      </p>
-
-    </div>
-  </section>
-  <section class="skills" id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
-        <li>Basics of JavaScripts</li>
-      </ul>
-    </div>
-  </section>
-  <section class="code-examples" id="code">
-    <div class="container">
-      <h2>Code examples</h2>
-      <code>
-<span>function</span> incrementString (strng) {
-  <span>let</span> i = 0
-  <span>while</span> (<span>typeof</span> strng[i] !== 'undefined' && Number.isNaN(parseInt(strng[i], 10))){
-    i++
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Anna Sapegina CV</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="index.dd20d76f.css"><link rel="stylesheet" href="index.7752e17e.css"></head><body> <header class="scrolled" id="header"> <nav class="container head-menu"> <a href="" class="logo">CV</a> <input type="checkbox"> <div class="hamburger"> <i class="fa-bars fas"></i> <i class="fa-times fas"></i> </div> <ul> <li> <a href="#about">About me</a> </li> <li> <a href="#skills">Skills</a> </li> <li> <a href="#code">Code Examples</a> </li> <li> <a href="#education">Education and experience</a> </li> <li> <a href="#portfolio">Portfolio</a> </li> </ul> </nav> </header> <main> <section class="welcome" id="welcome"> <div class="overlay"></div> <div class="container"> <h1>Welcome to my CV!</h1> <div class="typed"><span></span></div> <a class="arrow" href="#about"><span></span></a> </div> </section> <section class="about" id="about"> <div class="container"> <h2><span>About me</span></h2> <div class="content"> <div class="left-content"> <img src="photo.453cbc73.jpg" alt="photo" class="photo" width="320" height="320"> </div> <div class="right-content"> <h3>Anna Sapegina</h3> <h4>Front-end developer</h4> <p> I am a beginner female software engineer. I wish to became a professional front-end developer and build beautiful and convenient user interfaces. I was working as a school teacher, but I decided to start an IT career. I was teaching my students a Russian language, so I am pretty familiar with languages and I believe it will help me become a professional in another language: JavaScript! I really like to learn new stuff and I would like to share my knowledge to further generations of software developers. </p> <div class="contacts"> <ul> <li> <i class="fa-envelope far"></i> <a href="mailto:watochka@gmail.com">watochka@gmail.com</a> </li> <li> <i class="fa-phone fas"></i> <a href="tel:79990872551">+7-999-087-25-51</a> </li> </ul> </div> </div> </div> </div> </section> <section class="section-secondary skills" id="skills"> <div class="container"> <h2><span>Skills</span></h2> <ul> <li> <div class="progress" id="skill-html-progress"></div> <h4 class="skill-label">HTML</h4> </li> <li> <div class="progress" id="skill-css-progress"></div> <h4 class="skill-label">CSS</h4> </li> <li> <div class="progress" id="skill-git-progress"></div> <h4 class="skill-label">GIT</h4> </li> <li> <div class="progress" id="skill-js-progress"></div> <h4 class="skill-label">JavaScript</h4> </li> <li> <div class="progress" id="skill-en-progress"></div> <h4 class="skill-label">English level</h4> </li> </ul> </div> </section> <section class="code-examples" id="code"> <div class="container"> <h2><span>Code examples</span></h2> <pre>
+            <code>
+function indexEqualsValue(a) {
+  let start = 0;
+  let end = a.length - 1;
+  while (start &lt;= end) {
+      const k = (start + end) &gt;&gt; 1;
+      if (a[k] &lt; k) {
+          start = k + 1;
+      } else {
+          end = k - 1;
+      }
   }
-  <span>const</span> numbers = strng.slice(i,strng.length)
-  <span>const</span> paddedNumbers = `${parseInt(numbers || '0', 10) + 1}`
-    .padStart(numbers.length,'0')
-  <span>return</span> `${strng.slice(0,i)}${paddedNumbers}`
+  return start === a[start] ? start : -1;
 }
-      </code>
-    </div>
-  </section>
-  <section class="education" id="education">
-    <div class="container">
-      <h2>Education and experience</h2>
-      <ul>
-        <li>Bachelor degree in Pedagogical Institute Pacific National University</li>
-        <li>GeekBrains HTML & CSS workshop</li>
-        <li>Yandex practicum basic HTML course</li>
-      </ul>
-    </div>
-  </section>
-  <section class="lang" id="lang">
-    <div class="container">
-      <h2>Languages</h2>
-      <ul>
-        <li>Russian: native</li>
-        <li>English: A2</li>
-      </ul>
-    </div>
-  </section>
-</main>
-<footer>
-  <div class="container">
-    <div class="git-info">
-      <a href="https://github.com/Waaatka">Github: Waaatka</a>
-    </div>
-    <div class="year">2021</div>
-    <div class="rs-school">
-      <a href="https://rs.school/js/">
-        <img src="./images/rs_school_js.svg" alt="RS School" height="32">
-      </a>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+            </code>
+          </pre> <pre>
+            <code>
+const rotateMatrix = (arr) => {
+  const result = [];
+  for (let i = 0; i &lt; arr.length; i++) {
+    for (let j = 0; j &lt; arr[i].length; j++) {
+      if (!result[j]) {
+        result[j] = [];
+      }
+      result[j][i] = arr[i][arr[i].length - j - 1];
+    }
+  }
+  return result;
+};
+            </code>
+          </pre> </div> </section> <section class="education section-secondary" id="education"> <div class="container"> <h2><span>Education and experience</span></h2> <ul class="education-container"> <li class="education-box"> <div class="time">Jul 2021 - Sep 2021</div> <h4>RS School stage 0</h4> <p> Learned JavaScript basics, how to work with Git, improved my HTML and CSS skills, made Museum, Drum Kit and Whack a Shrek projects. </p> </li> <li class="education-box"> <div class="time">Mar 2021 - Mar 2021</div> <h4>GeekBrains HTML & CSS workshop</h4> <p>Learned adaptive Markup, made landing page.</p> </li> <li class="education-box"> <div class="time">Jan 2021 - Feb 2021</div> <h4>Yandex practicum basic HTML course</h4> <p>Learned basics of HTML and CSS.</p> </li> <li class="education-box"> <div class="time">Sep 2013 - Jun 2017</div> <h4> Bachelor degree in Pedagogical Institute Pacific National University </h4> <p>Became a school teacher :)</p> </li> </ul> </div> </section> <section id="portfolio"> <div class="container"> <h2><span>Portfolio</span></h2> <div class="portfolio"> <article class="portfolio-item"> <a href="https://rolling-scopes-school.github.io/waaatka-JSFEPRESCHOOL/museum/" target="_blank"> <img src="museum.0bbeddcb.jpeg" alt="Museum" width="300" height="151"> </a> <div class="portfolio-text"> <h4>Museum</h4> <p>Landing page for Louvre museum</p> <ul class="technologies"> <li>HTML</li> <li>CSS</li> </ul> </div> </article> <article class="portfolio-item"> <a href="https://rolling-scopes-school.github.io/waaatka-JSFEPRESCHOOL/drum-kit/" target="_blank"> <img src="drum-kit.b552c62a.png" alt="Drum Kit" width="300" height="151"> </a> <div class="portfolio-text"> <h4>Drum Kit</h4> <p>Virtual Drums app</p> <ul class="technologies"> <li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>Audio API</li> </ul> </div> </article> <article class="portfolio-item"> <a href="https://rolling-scopes-school.github.io/waaatka-JSFEPRESCHOOL/whack-a-mole/" target="_blank"> <img src="whak-a-shrek.f9785d5b.png" alt="Whack a Shrek" width="300" height="151"> </a> <div class="portfolio-text"> <h4>Whack-a-Shrek</h4> <p>Shrek-styled variation of Whack-a-mole game</p> <ul class="technologies"> <li>HTML</li> <li>CSS</li> <li>JavaScript</li> <li>Audio API</li> <li>Local storage API</li> </ul> </div> </article> </div> </div> </section> </main> <footer class="section-secondary"> <div class="container"> <div class="git-info"> <a href="https://github.com/Waaatka" target="_blank" title="Github: Waaatka"> <i class="fa-github fab"></i> </a> </div> <div class="year">2021</div> <div class="rs-school"> <a href="https://rs.school/js/"> <img src="rs_school_js.361859f4.svg" alt="RS School" height="32"> </a> </div> </div> </footer> <script type="module" src="index.8621eab9.js"></script> </body></html>
