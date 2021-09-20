@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "circular-progress-bar": "^2.1.0",
     "highlight.js": "^11.2.0",
     "normalize-scss": "^7.0.1",
     "typed.js": "^2.0.12"

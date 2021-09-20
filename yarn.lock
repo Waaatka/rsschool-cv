@@ -1420,13 +1420,6 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-circular-progress-bar@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/circular-progress-bar/-/circular-progress-bar-2.1.0.tgz#58e423fc282785a6a19000baa5259f09df5f0c1e"
-  integrity sha512-EwJxr+LZzTs62ebHLkxpbkfiMzetK8uZLs0ERoQZe1kAcLne7SPSnW1iEykDiqofV59AJ9ehaGsH3TD9nSHVpQ==
-  dependencies:
-    ola "^1.1.1"
-
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -3742,11 +3735,6 @@ object.pick@^1.3.0:
   integrity sha1-h6EKxMFpS9Lhy/U1kaZhQftd10c=
   dependencies:
     isobject "^3.0.1"
-
-ola@^1.1.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/ola/-/ola-1.2.1.tgz#ac791980b8c36fe179df8b3f2a3ae72f6b3042b9"
-  integrity sha512-richuePlugumsBC+ohk6NuVYkDPGQiVAHZU0qEkJ/Hy6oDaJCxCnuUQootYQ8T4k+pVeFf0Xdw7i17zTulKpTA==
 
 on-finished@~2.3.0:
   version "2.3.0"
